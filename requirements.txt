@@ -1,0 +1,6 @@
+streamlit
+openai
+pypdf
+python-dotenv
+python-docx
+tiktoken
