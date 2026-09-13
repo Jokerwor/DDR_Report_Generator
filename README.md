@@ -1,163 +1,131 @@
-# 📊 Data Science Learning Repository
+# 🏢 AI Detailed Diagnostic Report Generator (DDR AI)
 
-A comprehensive collection of Data Science concepts, Python programming, machine learning fundamentals, statistics, databases, and hands-on practice projects. This repository documents my learning journey and serves as a reference for core Data Science topics.
-
----
-
-## 🚀 About
-
-This repository contains organized notes, coding exercises, mini-projects, and implementations covering various Data Science and Python concepts.
-
-The goal of this repository is to strengthen problem-solving skills, understand data analysis techniques, and build a strong foundation for Machine Learning and Artificial Intelligence.
+An AI-powered application that automates the generation of **Detailed Diagnostic Reports (DDR)** from building inspection and thermal imaging reports. The system extracts key observations, analyzes findings using Large Language Models (LLMs), and produces structured, client-ready diagnostic reports.
 
 ---
 
-## ✨ Repository Highlights
+## 📖 Overview
 
-- 🐍 Python Programming
-- 📈 Statistics (Basic & Advanced)
-- 📊 NumPy
-- 🐼 Pandas
-- 📉 Matplotlib
-- 🗄️ SQL
-- 🍃 MongoDB
-- 🔗 PyMongo
-- 🌐 Flask
-- ⚡ Multithreading
-- ⚙️ Exception Handling
-- 🧹 Feature Engineering
-- 📁 File Handling
-- 💻 Python Projects
-- 📓 Jupyter Notebook Examples
+Preparing diagnostic reports manually from inspection documents is time-consuming, repetitive, and prone to human error. This project streamlines the process by automatically extracting information from PDF reports, identifying defects, analyzing probable causes, assessing severity, and generating professional reports.
 
 ---
 
-## 📂 Repository Structure
+## ✨ Features
 
-```
-Data-Science/
-│
-├── Database/
-├── Exception Handling/
-├── Feature Engineering/
-├── Files/
-├── Flask/
-├── Matplotlib/
-├── MongoDB/
-├── Multithreading/
-├── NumPy/
-├── Pandas/
-├── PyMongo/
-├── Python Project/
-├── SQL.py
-├── Statistics Basics/
-├── Statistics Advance/
-├── Python.ipynb
-└── More practice examples...
-```
+- 📄 Automatic PDF report processing
+- 🔍 Intelligent extraction of inspection observations
+- 🌡️ Thermal report analysis
+- 🧠 AI-powered reasoning using OpenAI
+- ⚠️ Root cause identification
+- 📊 Severity assessment
+- 💡 Recommendation generation
+- 📝 Structured Detailed Diagnostic Report (DDR)
+- 🚀 Streamlit-based interactive interface
 
 ---
 
-## 🛠 Technologies Used
+## 🛠 Tech Stack
 
 - Python
-- Jupyter Notebook
-- NumPy
+- Streamlit
+- OpenAI API
+- PyPDF2 / PyMuPDF
 - Pandas
-- Matplotlib
-- Flask
-- SQL
-- MongoDB
-- PyMongo
+- Regular Expressions
+- JSON
 
 ---
 
-## 📚 Topics Covered
+## 📂 Project Structure
 
-### Python
-- Variables
-- Loops
-- Functions
-- OOP
-- Exception Handling
-- File Handling
-- Multithreading
-
-### Data Analysis
-- NumPy Arrays
-- Pandas DataFrames
-- Data Cleaning
-- Data Manipulation
-- Data Visualization
-
-### Statistics
-- Descriptive Statistics
-- Probability
-- Distributions
-- Hypothesis Testing
-- Correlation
-- Regression Basics
-
-### Databases
-- SQL Queries
-- MongoDB CRUD Operations
-- Database Connectivity
-
-### Machine Learning Preparation
-- Feature Engineering
-- Data Preprocessing
-- Exploratory Data Analysis (EDA)
+```
+DDR_Report_Generator/
+│
+├── app.py                  # Streamlit application
+├── analyzer.py             # AI reasoning and analysis
+├── extractor.py            # PDF text extraction
+├── report_generator.py     # DDR report creation
+├── requirements.txt
+├── README.md
+└── .gitignore
+```
 
 ---
 
-## ▶️ Getting Started
+## ⚙️ Workflow
+
+1. Upload Inspection Report (PDF)
+2. Upload Thermal Report (PDF)
+3. Extract text from reports
+4. Identify observations and defects
+5. Analyze findings using AI
+6. Determine severity and root causes
+7. Generate recommendations
+8. Create a structured Detailed Diagnostic Report
+
+---
+
+## 🚀 Installation
 
 Clone the repository
 
 ```bash
-git clone https://github.com/Jokerwor/Data-Science.git
+git clone https://github.com/Jokerwor/DDR_Report_Generator.git
 ```
 
-Move into the project directory
+Navigate to the project
 
 ```bash
-cd Data-Science
+cd DDR_Report_Generator
 ```
 
-Install required packages
+Install dependencies
 
 ```bash
-pip install numpy pandas matplotlib flask pymongo jupyter
-```
-
-Run notebooks using
-
-```bash
-jupyter notebook
+pip install -r requirements.txt
 ```
 
 ---
 
-## 🎯 Learning Objectives
+## ▶️ Run the Project
 
-- Master Python for Data Science
-- Understand Statistical Concepts
-- Learn Data Cleaning & Visualization
-- Practice SQL and MongoDB
-- Build a foundation for Machine Learning
-- Improve problem-solving skills
+```bash
+streamlit run app.py
+```
+
+---
+
+## 📌 Example Use Cases
+
+- Building Inspection Automation
+- Structural Assessment
+- Thermal Imaging Analysis
+- Civil Engineering Reports
+- Facility Maintenance
+- Infrastructure Diagnostics
+
+---
+
+## 📊 Advantages
+
+- Saves report preparation time
+- Reduces manual effort
+- Improves reporting consistency
+- AI-assisted defect analysis
+- Client-ready professional reports
+- Easy-to-use web interface
 
 ---
 
 ## 📈 Future Improvements
 
-- Add Machine Learning Algorithms
-- Deep Learning Examples
-- Natural Language Processing
-- Computer Vision Projects
-- Time Series Analysis
-- Data Visualization Dashboards
-- End-to-End Data Science Projects
+- Multi-language report generation
+- OCR support for scanned PDFs
+- Image-based defect detection
+- Cloud deployment
+- Report export to DOCX/PDF
+- Dashboard and analytics
+- Support for multiple LLM providers
 
 ---
 
@@ -165,11 +133,12 @@ jupyter notebook
 
 **Rishi Kumar Srivastav**
 
-- GitHub: https://github.com/Jokerwor
-- LinkedIn: https://linkedin.com/in/rishisrivastav
+GitHub: https://github.com/Jokerwor
+
+LinkedIn: https://linkedin.com/in/rishi-srivastav
 
 ---
 
 ## ⭐ Support
 
-If you found this repository useful, consider giving it a **⭐ Star** on GitHub.
+If you found this project useful, consider giving it a ⭐ on GitHub.
